@@ -68,7 +68,7 @@ const ProfileSchema = mongoose.Schema({
       },
       fieldofstudy: {
         type: String,
-        required: true;
+        required: true,
       },
       from: {
         type: Date,
@@ -86,28 +86,27 @@ const ProfileSchema = mongoose.Schema({
       },
     },
   ],
-    social:
-    {
-      youtube: {
-        type: String,
-      },
-      twitter: {
-        type: String,
-      },
-      facebook: {
-        type: String,
-      },
-      linkedin: {
-        type: String,
-      },
-      instagram: {
-        type: String,
-      },
-   },
-   date: {
+  social: {
+    youtube: {
+      type: String,
+    },
+    twitter: {
+      type: String,
+    },
+    facebook: {
+      type: String,
+    },
+    linkedin: {
+      type: String,
+    },
+    instagram: {
+      type: String,
+    },
+  },
+  date: {
     type: Date,
-    default: Date.now
-   }
+    default: Date.now,
+  },
 });
 
 module.exports = User = mongoose.model('user', ProfileSchema);

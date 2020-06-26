@@ -5,7 +5,7 @@ import { register } from '../../actions/auth';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const Register = ({ setAlert }) => {
+const Register = ({ setAlert, register }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
